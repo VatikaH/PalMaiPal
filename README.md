@@ -1,4 +1,0 @@
-PalMaiPal
-=========
-
-Friend Search App

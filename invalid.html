@@ -1,0 +1,278 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sign In</title>
+<style type="text/css">
+<!--
+body {
+font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+      background-color: #42413C;
+margin-left: 100px;
+padding: 0;
+color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { 
+padding: 0;
+margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+color: #42413C;
+       text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+  }
+a:visited {
+color: #6E6C64;
+       text-decoration: underline;
+  }
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	  text-decoration: none;
+  }
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+width: 960px;
+       background-color: #FFF;
+margin-left:170px; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #ADB96E;
+	height:90px;
+}
+.content {
+
+padding: 3px 0;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+padding: 10px 0;
+	 background-color: #CCC49F;
+margin-top:73em;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+float: right;
+       margin-left: 280px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+float: right;
+       margin-right: 80px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+clear:both;
+height:0;
+       font-size: 1px;
+       line-height: 0px;
+}
+-->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+	font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background-color: #C0C0C0;
+color: #000;
+       font-family: "Varela Round", Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       line-height: 1em;
+}
+
+input {
+border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+/* ---------- LOGIN ---------- */
+
+#login {
+margin: 10px auto;
+position:relative;
+height:500px;
+	padding-left:37em;
+width: 397px;
+right:60px;
+}
+
+#login h2 {
+	background-color: #f95252;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+color: #fff;
+       font-size: 28px;
+padding: 20px 26px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+	margin-right:30px
+}
+
+#login fieldset {
+	background-color: #fff;
+width:97%;
+height:330px;
+right:60px;
+margin:10px auto;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+padding-left:0;
+margin-right:70px;
+
+/*padding: 20px 26px;*/
+}
+
+#login fieldset p {
+color: #777;
+       margin-bottom: 34px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"] {
+	background-color: #eee;/*white box*/
+color: #777;
+padding: 9px 10px;
+width: 288px;
+}
+
+#login fieldset input[type="submit"] {
+	background-color: #33cc77;
+color: #fff;
+display: block;
+margin: 0 auto;
+padding: 4px 0;
+width: 100px;
+}
+
+#login fieldset input[type="submit"]:hover {
+	background-color: #28ad63;
+}
+</style></head>
+
+<body>
+<div style="width:185px">
+<div><img src=c1.jpg alt="friends" style="float:left" width="185px" height="557px"></div>
+<div><img src=c2.jpg alt="friends" style="float:left" width="185px" height="557px"></div>
+</div>
+
+<div class="container">
+<div class="header"><a href="#"><img src="logo.png" alt="Insert Logo Here" name="Insert_logo" width="180" height="90" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a><h1 style="margin-left:190px;margin-top:-60px;">Pal Mein Pal</h1> 
+<!-- end .header --></div>
+<div class="content">
+<div style="background-color:#F95252;width:50%;height:50px;width:40%;margin-left:40px;margin-top:10px;margin-bottom:-50px">
+<h1><span class="fontawesome-lock" padding="10px" style="margin-left:10px;margin-bottom:5px;"><br/>About Us</span></h1>
+<p style="font-size:25px">
+<br>
+<ul margin="10px">
+<li>Do you feel lonely in a new place and new language?</li><br>
+<li>Do you want to interact with people from your college?</li><br>
+<li>Are you shy to seek advice from your mentors?</li><br>
+<li>Do you look for someone to talk to in your native language?</li><br>
+</ul>
+<br>
+<br><br>
+<br>
+<p><strong>Then you are at the place!</strong>
+<br>
+<br>
+<br>
+</p>
+<h3>
+JOIN TODAY, MAKE FRIENDS EASILY AND ENJOY!!!!!!!
+<br>
+</h3>
+</div>
+
+
+
+
+
+
+
+
+<div id="login">
+
+<h2><span class="fontawesome-lock"></span>Sign In</h2>
+
+<form action="login.php" method="POST">
+
+<fieldset>
+
+<p><label for="email">E-mail address</label></p>
+<p><input name="email" type="email" id="email" value="mail@address.com" onBlur="if(this.value=='')this.value='mail@address.com'" onFocus="if(this.value=='mail@address.com')this.value=''"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
+
+<p><label for="password">Password</label></p>
+<p><input name="password" type="password" id="password" value="password" onBlur="if(this.value=='')this.value='password'" onFocus="if(this.value=='password')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+<p> Invalid Username Or Password </p>
+<p><input type="submit" value="Sign In"></p>
+<!--
+</fieldset>
+
+</form>
+</div>
+-->
+<!-- end login -->
+<div style="background-color:#CCC49F;clear:both;margin-left:1.5em;text-align:center;float:left;width:80%;font-size:16px;height:14px;margin-right:15px;padding:2%;margin-bottom:800px">If you don't have an account, <a href="signup.html">sign up</a> now!</div>
+</div>
+</fieldset>
+</form>
+</div>
+<div class="footer">
+<p>Footer</p>
+<!-- end .footer --></div>
+<!-- end .container --></div>
+</body>
+</html>
+
